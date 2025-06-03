@@ -6,15 +6,11 @@ Given("access to the portal da transparencia",()=>{
     cy.get("button").contains('Pular Tutorial').click()
 })
 
-When("eu clico em despesas publicas",()=>{
-    cy.get('#btnDespesas').click()
+When("clicked the search button without putting any information",()=>{
+    cy.get('button[type="submit"]').click()
 })
 
 
-And("aperto botao de ver painel grafico",()=>{
-   cy.get('#button-painel-depesas').click()
-})
-
-Then("deve mostrar os graficos das despesas publicas", ()=>{
-    cy.get('#main-content').should('be.visible')
+Then("should not show any information",()=>{
+    cy.get("#resultados")
 })

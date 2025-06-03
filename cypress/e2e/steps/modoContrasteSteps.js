@@ -6,14 +6,10 @@ Given("eu acessar o portal da transparencia",()=>{
     cy.get("button").contains('Pular Tutorial').click()
 })
 
-
-When("eu clico em Despesas Publicas",()=>{
-    cy.get('#btnDespesas').click()
+When("clico no botão de modo contrase",()=>{
+    cy.get("#alto-contraste").click()
 })
 
-
-Then("deve direcionar para a pagina de despesas publicas",()=>{
-    cy.url().should('include', 'despesas/visao-gerall');
+Then("o site deve mudar para modo contraste",()=>{
+    cy.get('body').should('have.class', 'contraste');
 })
-
-

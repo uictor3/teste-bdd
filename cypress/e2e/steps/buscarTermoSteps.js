@@ -15,19 +15,3 @@ And("aperto o botao de pesquisa",()=>{
 Then("deve aparecer todos resultados relacionados a {String}",()=>{
     cy.get("#resultados").should("contain.text", "Saúde")
 })
-
-//segundo teste
-
-Given("eu acessar o portal da transparencia",()=>{
-    cy.visit('https://portaldatransparencia.gov.br/')
-    cy.get("#accept-minimal-btn").click()
-    cy.get("button").contains('Pular Tutorial').click()
-})
-
-When("clico no botão de modo contrase",()=>{
-    cy.get("#alto-contraste").click()
-})
-
-Then("o site deve mudar para modo contraste",()=>{
-    cy.get('body').should('have.class', 'contraste');
-})

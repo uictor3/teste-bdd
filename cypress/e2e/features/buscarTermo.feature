@@ -1,17 +1,10 @@
 #language: pt
 
 
-Funcionalidade: procurando termo portal da transparencia
+Funcionalidade: Acessar as informações do portal da transparência
 
+    Cenário: vou olhar quais informações além das que estão na página inicial do portal da transparência
     Dado  acesso o portal da transparencia
     Quando clico no "Acesso a informação"
     Então deve aparecer a tela que contém informações sobre as funcionalidades que tem no site
-
-
-Funcionalidade: ver site em modo contraste
-
-    Dado  acesso o portal da transparencia
-    Quando clico no botão de modo contrase
-    Então o site deve mudar para modo contraste
-
 
