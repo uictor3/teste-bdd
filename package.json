@@ -1,0 +1,29 @@
+{
+  "name": "teste-bdd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uictor3/teste-bdd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/uictor3/teste-bdd/issues"
+  },
+  "homepage": "https://github.com/uictor3/teste-bdd#readme",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^22.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.5",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "cypress": "^14.4.0",
+    "esbuild": "^0.25.5",
+    "process": "^0.11.10"
+  }
+}
